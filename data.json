@@ -1,0 +1,35 @@
+
+var alldata = [
+  {
+    id: "1",
+    name: "AlterConf",
+    description: "A great conference",
+    featured: true,
+    code_of_conduct: true,
+    captions: true,
+    interpreter: true,
+    child_care: true,
+    scholarships: true
+  },
+  {
+    id: "2",
+    name: "CodeMash",
+    description: "A fun conference",
+    featured: true,
+    code_of_conduct: true,
+    captions: false,
+    interpreter: false,
+    child_care: true,
+    scholarships: false
+  },
+  {
+    id: "3",
+    name: "The Strange Loop",
+    description: "A strange conference",
+    code_of_conduct: true,
+    captions: false,
+    interpreter: false,
+    child_care: false,
+    scholarships: true
+  }
+];

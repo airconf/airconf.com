@@ -1,0 +1,40 @@
+<label for="code_of_conduct">
+  {{input type="checkbox" checked=code_of_conduct id="code_of_conduct"}}
+  Code of Conduct
+</label>
+<label for="live_captioning">
+  {{input type="checkbox" checked=live_captioning id="live_captioning"}}
+  Closed Captioning
+</label>
+<label for="asl_interpretation">
+  {{input type="checkbox" checked=asl_interpretation id="asl_interpretation"}}
+  ASL Interpretation
+</label>
+<label for="child_care">
+  {{input type="checkbox" checked=child_care id="child_care"}}
+  Child Care
+</label>
+<label for="opportunity_scholarships">
+  {{input type="checkbox" checked=opportunity_scholarships id="opportunity_scholarships"}}
+  Opportunity Scholarships
+</label>
+<label for="family_track">
+  {{input type="checkbox" checked=family_track id="family_track"}}
+  Family Track
+</label>
+<label for="video_recordings">
+  {{input type="checkbox" checked=video_recordings id="video_recordings"}}
+  Video Recordings
+</label>
+<label for="wheelchair_access">
+  {{input type="checkbox" checked=wheelchair_access id="wheelchair_access"}}
+  Wheelchair Access
+</label>
+
+<ul>
+  {{#each model as |conference|}}
+    <li>
+      {{#link-to 'conference' conference}}{{conference.name}}{{/link-to}}
+    </li>
+  {{/each}}
+</ul>

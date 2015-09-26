@@ -1,0 +1,28 @@
+<h2>{{model.name}}</h2>
+<p>{{model.description}}</p>
+
+{{#if model.code_of_conduct}}
+<label for="code_of_conduct" >
+  Code of Conduct
+</label>
+{{/if}}
+{{#if model.captions}}
+<label for="captions">
+  Closed Captioning
+</label>
+{{/if}}
+{{#if model.interpreter}}
+<label for="interpreter">
+  ASL Interpreter
+</label>
+{{/if}}
+{{#if model.child_care}}
+<label for="child_care">
+  Child Care
+</label>
+{{/if}}
+{{#if model.scholarships}}
+<label for="scholarships">
+  Scholarships
+</label>
+{{/if}}

@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('conference', {path: '/:id'});
+  this.route('search', {path: '/s'});
 });
 
 export default Router;
